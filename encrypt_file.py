@@ -20,9 +20,10 @@ my_key = load_key()
 # Example message to encrypt
 message = "Hello, this is a secret message!".encode()
 
-#
+# Key for encryption
 fernet = Fernet(my_key)
 
+# Encrypt the message with the key
 encrypted_message = fernet.encrypt(message)
 print("Encrypted message:", encrypted_message)
 
