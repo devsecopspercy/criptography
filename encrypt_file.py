@@ -13,7 +13,7 @@ def load_key():
     return open("my_key.key", "rb").read()
 
 
-# ---------------------------Encrypt a message----------#
+# ---------------------------Encrypt a message----------------#
 generate_key() 
 my_key = load_key()
 
@@ -28,7 +28,7 @@ encrypted_message = fernet.encrypt(message)
 print("Encrypted message:", encrypted_message)
 
 
-# Decrypt the message
+#--------------------------Decrypt the message------------------#
 decrypted_message = fernet.decrypt(encrypted_message)
 print("Decrypted message:", decrypted_message.decode())
 
